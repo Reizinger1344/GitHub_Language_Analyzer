@@ -1,0 +1,2 @@
+# Ignore CSS files from language stats
+*.css linguist-vendored
