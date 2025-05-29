@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GitHub Language Stats Viewer</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="icon" type="image/svg+xml" href="static/favicon.svg">
+</head>
+<body>
+
+<h1>GitHub Language Statistics Viewer</h1>
+
+<div id="warning" role="alert">
+    <strong>Security notice:</strong> Please be aware that your GitHub Personal Access Token (PAT) is used only in your browser to access GitHub's API and is not stored or sent anywhere else. However, entering your token in this page exposes it to your browser environment and any extensions. Use with caution and only if you trust your extensions
+</div>
+
+<form id="githubForm" autocomplete="off" spellcheck="false">
+    <label for="username">GitHub Username <sup>*</sup></label>
+    <input type="text" id="username" name="username" required placeholder="e.g. octocat" />
+
+    <label for="token">GitHub Personal Access Token (optional)</label>
+    <input type="password" id="token" name="token" placeholder="Paste your PAT here to increase rate limit" />
+
+    <button type="submit">Fetch Language Stats</button>
+</form>
+
+<div id="results" hidden>
+    <h2>Language Summary</h2>
+    <pre id="languageSummary"></pre>
+    <h2>Language Usage Chart</h2>
+    <canvas id="languageChart"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="static/script.js" defer></script>
+
+</body>
+</html>
